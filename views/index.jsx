@@ -1,12 +1,21 @@
-const React = require('react')
-const Default = require('./layouts/default')
+const React = require("react");
+const Default = require("./layouts/default");
 
-function Index () {
-    return (
-      <Default>
-        <h2>Index Page</h2>
-      </Default>
-    )
+function Index({ breads }) {
+  return (
+    <Default>
+      <h2>Index Page</h2>
+      {/* This is a JSX comment. */}
+      {/* <p>I have {breads[0].name} bread!</p> */}
+      <ul>
+        {breads.map((bread, index) => {
+          return <li key={index}>
+            {bread.name}
+          </li>;
+        })}
+      </ul>
+    </Default>
+  );
 }
 
-module.exports = Index
+module.exports = Index;
