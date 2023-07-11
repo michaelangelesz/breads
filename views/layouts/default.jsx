@@ -5,6 +5,7 @@ function Default(html) {
     <html>
       <head>
         <title>{html.title || "Default"}</title>
+        <link rel="icon" type="image/png" href="images/bread.png" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -44,7 +45,7 @@ function Default(html) {
         <div className="footer">
           <div className="container">
             <span className="my-info">
-              ♦ Mike W ♦︎{" "}
+              ♦ webdesigns by Mike ♦︎{" "}
               <a href="https://www.linkedin.com/in/michael-m-weisphal/">
                 LinkedIn
               </a>{" "}
